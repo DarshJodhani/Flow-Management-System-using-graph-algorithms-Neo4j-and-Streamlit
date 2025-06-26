@@ -3,9 +3,9 @@ from neo4j import GraphDatabase
 # MATCH (n)-[r]->(m)
 # RETURN n, r, m
 
-NEO4J_URI = "bolt://localhost:7687" 
-NEO4J_USER = "neo4j"
-NEO4J_PASSWORD = "12345678"
+NEO4J_URI = "your uri" 
+NEO4J_USER = "user"
+NEO4J_PASSWORD = "your password"
 
 driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USER, NEO4J_PASSWORD))
 
